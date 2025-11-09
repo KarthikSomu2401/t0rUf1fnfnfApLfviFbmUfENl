@@ -1,0 +1,9 @@
+{
+  "name": "t0rUf1fnfnfApLfviFbmUfENl-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/t0rUf1fnfnfApLfviFbmUfENl-e2e/src",
+  "implicitDependencies": ["t0rUf1fnfnfApLfviFbmUfENl"],
+  "// targets": "to see all targets run: nx show project t0rUf1fnfnfApLfviFbmUfENl-e2e --web",
+  "targets": {}
+}
