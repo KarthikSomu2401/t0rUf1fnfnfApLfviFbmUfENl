@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ks/dashboard": ["libs/dashboard/src/index.ts"],
+      "@ks/apptoolbar": ["libs/apptoolbar/src/index.ts"],
+      "@ks/shared": ["libs/shared/src/index.ts"],
+      "@ks/stories-store": ["libs/stories-store/src/index.ts"],
+      "@ks/story-card": ["libs/story-card/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

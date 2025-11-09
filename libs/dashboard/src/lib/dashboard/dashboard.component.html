@@ -1,0 +1,53 @@
+<ks-apptoolbar></ks-apptoolbar>
+<div class="dashboard-container">
+  <div class="select-container">
+    <mat-select
+      class="type-select"
+      (selectionChange)="onStorySourceChange($event.value)"
+      [value]="storyTypes[0].value"
+    >
+      @for (type of storyTypes; track type.value) {
+      <mat-option [value]="type.value">{{ type.viewValue }}</mat-option>
+      }
+    </mat-select>
+    <mat-paginator
+      [length]="count()"
+      [pageSize]="10"
+      [pageSizeOptions]="storyLimit"
+      aria-label="Select page"
+      (page)="onPageChange($event)"
+    >
+    </mat-paginator>
+  </div>
+  <div class="stories-container">
+    <div [class]="showComments() ? 'half-stories-list' : 'full-stories-list'">
+      @for (story of storiesData(); track story.id) {
+      <ks-story-card
+        [story]="story"
+        (comments)="clicked($event)"
+      ></ks-story-card>
+      }
+    </div>
+    @if(showComments()){
+    <div
+      [class]="showComments() ? 'show-comments-list' : 'hidden-comments-list'"
+    >
+      <button matButton class="close-comments-icon">
+        <mat-icon (click)="closeComments()">close</mat-icon>
+      </button>
+      <div class="comments-list">
+        @for (comment of commentsData(); track comment.id) { @if(comment.text){
+        <ul class="comment-list">
+          <li class="comment-item">
+            <p class="comment-text" [innerHTML]="comment.text"></p>
+            <small class="comment-meta"
+              >{{ comment.by }} - {{ computedTime(comment.time) }}</small
+            >
+          </li>
+        </ul>
+        } }
+      </div>
+    </div>
+    }
+  </div>
+</div>

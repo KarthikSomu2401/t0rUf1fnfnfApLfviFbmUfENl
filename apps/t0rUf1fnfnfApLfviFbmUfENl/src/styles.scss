@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use './typography.scss';
+
+:root {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: #fbebe0,
+      container-text-color: #fe6601,
+    )
+  );
+
+  @include mat.icon-overrides(
+    (
+      color: #fe6601,
+    )
+  );
+
+  @include mat.select-overrides(
+    (
+      panel-background-color: #fbebe0,
+      enabled-trigger-text-color: #fe6601,
+    )
+  );
+}
+
+html {
+  background: white;
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+      ),
+      typography: (
+        plain-family: 'Verdana, Geneva',
+        brand-family: sans-serif,
+      ),
+      density: 0,
+    )
+  );
+}

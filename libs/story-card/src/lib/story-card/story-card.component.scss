@@ -1,0 +1,54 @@
+.story-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    color: #fe6601;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    gap: 16px;
+
+    .icons-container {
+      display: flex;
+      justify-content: flex-end;
+      vertical-align: middle;
+      align-items: center;
+      gap: 16px;
+
+      .icon-with-number {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+
+        .hide-icon,
+        .comments-icon {
+          cursor: pointer;
+        }
+
+        .icon-number {
+          font-size: 14px;
+          color: #666;
+          min-width: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
