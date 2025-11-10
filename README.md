@@ -2,8 +2,6 @@
 
 A modern application built with Angular 20 and NgRx Signals, featuring a modular monorepo architecture using Nx.
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
-
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -95,6 +93,6 @@ nx affected:graph
 - [Angular Material](https://material.angular.io)
 
 
-Application Screenshot
+### Screenshot
 
 <img width="1429" height="881" alt="Screenshot 2025-11-10 at 12 54 03 a m" src="https://github.com/user-attachments/assets/a5ae5cf7-e0ed-494d-9b8b-05e15d495f70" />
