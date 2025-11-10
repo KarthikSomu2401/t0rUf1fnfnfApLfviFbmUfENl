@@ -21,6 +21,18 @@ Before you begin, ensure you have the following installed:
    ```bash
    npm install -g nx
    ```
+   
+### Install Application Dependencies
+
+1. Inside Applictation folder install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. If the before one fails, then use following command:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
 ### Development Server
 
