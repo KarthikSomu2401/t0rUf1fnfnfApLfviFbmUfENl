@@ -24,6 +24,9 @@ Before you begin, ensure you have the following installed:
    npm install --legacy-peer-deps
    ```
 
+
+### NOTE: Use the terminal inside the application to use local nx, because nx will be installed in local after the above command
+
 ### Development Server
 
 Start the development server:
