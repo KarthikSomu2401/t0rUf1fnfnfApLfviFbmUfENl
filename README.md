@@ -5,22 +5,12 @@ A modern application built with Angular 20 and NgRx Signals, featuring a modular
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
-- Node.js 18 or higher
-- npm (Node Package Manager)
+- Node.js >> 25.2.1
+- npm >> 11.6.2
+
+### NOTE: Make sure the versions match as mentioned above
 
 ## Getting Started
-
-### First-time Setup
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Install Nx CLI globally (if not already installed):
-   ```bash
-   npm install -g nx
-   ```
    
 ### Install Application Dependencies
 
