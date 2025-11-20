@@ -77,18 +77,11 @@ The application follows a modular architecture with these main libraries:
 
 ## Development Tools
 
-Useful commands for development:
+Lint:
 
 ```bash
 # Lint the code
 nx lint t0rUf1fnfnfApLfviFbmUfENl
-
-# Generate new components/services
-nx generate @nx/angular:component my-component
-nx generate @nx/angular:service my-service
-
-# Check affected projects
-nx affected:graph
 ```
 
 ## Technology Stack
