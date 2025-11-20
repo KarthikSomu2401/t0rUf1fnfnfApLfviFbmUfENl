@@ -33,13 +33,20 @@ nx serve t0rUf1fnfnfApLfviFbmUfENl
 
 The application will be available at `http://localhost:4200`
 
-### Running Tests
+### Running Unit Tests
 
 ```bash
 # Run unit tests
 nx test t0rUf1fnfnfApLfviFbmUfENl
 
 # other apps to test apptoolbar, dashboard, shared, stories-store, story-card
+```
+
+### Running E2E Tests
+
+```bash
+# install playwright
+npx install playwright
 
 # Run e2e tests
 nx e2e t0rUf1fnfnfApLfviFbmUfENl-e2e
